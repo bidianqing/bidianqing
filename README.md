@@ -1,5 +1,5 @@
 <img src="https://github-readme-stats.vercel.app/api?username=bidianqing&show_icons=true" alt="logo" height="160" align="right" style="margin: 5px; margin-bottom: 20px;" />
 
-### I'm bidianqing
+### 自我介绍
 
-I am a web developer and software engineer currently living in BeiJing. My interests range from programming to web development. I am also interested in movies.
+我是一名软件开发工程，目前居住在北京。

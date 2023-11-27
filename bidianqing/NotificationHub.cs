@@ -22,6 +22,7 @@ namespace bidianqing
         public async Task SendMessage(string message)
         {
             await Console.Out.WriteLineAsync("收到客户端发来的消息:" + message);
+            await base.Clients.All.SendAsync("receiveMessage", message);
         }
     }
 }

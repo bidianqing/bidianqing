@@ -1,16 +1,18 @@
 ﻿using bidianqing.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using System.Diagnostics;
 
 namespace bidianqing.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IHubContext<NotificationHub> _hubContext;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(IHubContext<NotificationHub> hubContext)
         {
-            _logger = logger;
+            _hubContext = hubContext;
         }
 
         public IActionResult Index()
@@ -27,6 +29,14 @@ namespace bidianqing.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SendAll([FromQuery] string message)
+        {
+            await _hubContext.Clients.All.SendAsync("receiveMessage", message);
+
+            return Content("ok");
         }
     }
 }

@@ -9,5 +9,6 @@
 
 ### My Technical Skills
 - .NET/.NET Core (C#)
+- Golang
 - Docker, Kubernetes
 - Microservices, Dapr

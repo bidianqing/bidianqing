@@ -4,7 +4,7 @@
 - 👨‍💻 .NET Veteran for 10+ years
 - 💻 Full stack web developer
 - 🤵 Pronouns: He/Him
-- 📫 You can reach me at [![Gmail](https://img.shields.io/badge/-bidianqing@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:bidianqing@gmail.com)
+- 📫 You can reach me at [![Gmail](https://img.shields.io/badge/-bidianqing@qq.com-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:bidianqing@qq.com)
 - 🏠 Live in Beijing
 
 ### My Technical Skills
